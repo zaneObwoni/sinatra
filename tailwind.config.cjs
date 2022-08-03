@@ -10,5 +10,6 @@ module.exports = {
   variants: {},
   plugins: [
     require('tailwindcss-question-mark'),
+    require("daisyui")
   ],
 }
