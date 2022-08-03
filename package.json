@@ -1,0 +1,22 @@
+{
+  "name": "sinatra-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "NODE_ENV=dev tailwindcss -c ./tailwind.config.cjs -o ./tailwind.css --minify --watch",
+    "tailwind-production": "NODE_ENV=production tailwindcss -c ./tailwind.config.cjs -o ./tailwind.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "daisyui": "^2.20.0",
+    "tailwindcss-question-mark": "^0.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.14"
+  }
+}
