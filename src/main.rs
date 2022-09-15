@@ -1,10 +1,13 @@
+mod pages;
+
+use crate::pages::discover::Discover;
 use yew::prelude::*;
 
 #[function_component(App)]
 pub fn app() -> Html {
     html! {
-        <div class="">
-            <h1 class="text-3xl font-bold underline text-green-300">{"app page"}</h1>
+        <div class="h-screen w-screen grid bg-red-500">
+            <Discover />
         </div>
     }
 }

@@ -5,11 +5,11 @@ module.exports = {
     "./index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+    },
   },
   variants: {},
   plugins: [
     require('tailwindcss-question-mark'),
-    require("daisyui")
   ],
 }

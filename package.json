@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently \"tailwind-production\" \"trunk serve\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "NODE_ENV=dev tailwindcss -c ./tailwind.config.cjs -o ./tailwind.css --minify --watch",
-    "tailwind-production": "NODE_ENV=production tailwindcss -c ./tailwind.config.cjs -o ./tailwind.css --minify"
+    "dev": "NODE_ENV=dev tailwindcss -c ./tailwind.config.cjs -o ./tailwind.css --minify --watch",
+    "prod": "NODE_ENV=production tailwindcss -c ./tailwind.config.cjs -o ./tailwind.css --minify"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.14"
+    "concurrently": "^7.3.0",
+    "postcss": "^8.4.14",
+    "prettier": "^2.7.1"
   }
 }
