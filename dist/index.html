@@ -1,13 +1,14 @@
 <!DOCTYPE html><html lang="en"><head>
         <meta charset="UTF-8">
         <title>Sinatra | High fidelity sound! </title>
-        <link rel="stylesheet" href="/tailwind-6529d549d17f1a29.css">
+        <link rel="stylesheet" href="/tailwind-d978c5b9d6648b5a.css">
     
-<link rel="preload" href="/index-54802dd72d727549_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/index-54802dd72d727549.js"></head>
+<link rel="preload" href="/sinatra-frontend-4f8b246bf07b0377_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/sinatra-frontend-4f8b246bf07b0377.js"></head>
 <body>
-<script type="module">import init from '/index-54802dd72d727549.js';init('/index-54802dd72d727549_bg.wasm');</script><script>(function () {
-    var url = 'ws://' + window.location.host + '/_trunk/ws';
+<script type="module">import init from '/sinatra-frontend-4f8b246bf07b0377.js';init('/sinatra-frontend-4f8b246bf07b0377_bg.wasm');</script><script>(function () {
+    var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    var url = protocol + '//' + window.location.host + '/_trunk/ws';
     var poll_interval = 5000;
     var reload_upon_connect = () => {
         window.setTimeout(
