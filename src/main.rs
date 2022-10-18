@@ -36,7 +36,6 @@ impl Component for Model {
             <div>
                 <button onclick={link.callback(|_| Msg::AddOne)}>{ "+1" }</button>
                 <p>{ self.value }</p>
-                <p class="bg-red-100">{"Test this ....!"}</p>
             </div>
         }
     }
